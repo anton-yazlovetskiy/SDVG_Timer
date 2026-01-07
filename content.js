@@ -46,7 +46,7 @@
   
       .timer-circle-progress {
         fill: none;
-        stroke: #00ffaa;
+        stroke: #efdd188a;
         stroke-width: 6;
         stroke-linecap: round;
         transition: stroke-dashoffset 1s linear;
@@ -61,7 +61,7 @@
       }
       
       .timer-finished .timer-circle-progress {
-        stroke: #ff4d4d;
+        stroke: #20ef6fff;
       }
   
       /* --- НЕОНОВАЯ РАМКА --- */
@@ -76,8 +76,8 @@
         box-sizing: border-box;
         
         /* Внутреннее свечение (inset) */
-        box-shadow: inset 0 0 20px 5px rgba(0, 255, 170, 0.5),
-                    inset 0 0 40px 10px rgba(0, 255, 170, 0.2);
+        box-shadow: inset 0 0 10px 5px rgba(0, 255, 170, 0.5),
+                    inset 0 0 20px 10px rgba(0, 255, 170, 0.2);
         
         animation: neon-pulse 3s infinite alternate;
       }
@@ -130,9 +130,9 @@
         clearInterval(interval);
         container.classList.add('timer-finished');
         text.innerText = "00:00";
-        // Изменим цвет рамки на красный при завершении
+        // Изменим цвет рамки при завершении
         borderDiv.style.animation = 'none';
-        borderDiv.style.boxShadow = 'inset 0 0 30px 10px rgba(255, 77, 77, 0.6)';
+        borderDiv.style.boxShadow = 'inset 0 0 30px 10px rgba(143, 242, 50, 0.6)';
         return;
       }
   
